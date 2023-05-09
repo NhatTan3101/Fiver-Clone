@@ -1,0 +1,15 @@
+.container {
+    display: flex;
+    background-color: #fafafa;
+    align-items: center;
+    justify-content: center;
+
+    span {
+        color: #a3a3a3;
+        font-weight: 500;
+    }
+
+    img {
+        margin: 0 20px;
+    }
+}

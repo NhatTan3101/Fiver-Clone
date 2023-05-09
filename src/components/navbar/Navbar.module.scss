@@ -1,0 +1,114 @@
+.container {
+    background-color: #013914;
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    flex-direction: column;
+    color: #fff;
+    transition: 0.5s all ease;
+    z-index: 2;
+
+    .header {
+        padding: 20px 200px;
+        display: flex;
+        justify-content: space-between;
+
+        .logo {
+            .logoName {
+                font-weight: 700;
+                font-size: 32px;
+            }
+
+            .logoDot {
+                color: rgb(169 197 169);
+                font-size: 50px;
+                line-height: 10px;
+            }
+        }
+
+        .link {
+            font-weight: 500;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+
+            span {
+                margin: 0px 10px;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+
+            button {
+                background-color: transparent;
+                border: 1px solid #fff;
+                color: #fff;
+                padding: 7px 15px;
+                border-radius: 4px;
+
+                &:hover {
+                    cursor: pointer;
+                    background-color: #04AA6D;
+                    border-color: #04AA6D;
+                }
+            }
+
+            .user {
+                display: flex;
+                align-items: flex-end;
+            }
+
+            .option {
+                background-color: #fff;
+                border-radius: 4px;
+                color: #000;
+                position: absolute;
+                padding: 10px;
+                flex-direction: column;
+                display: flex;
+                margin-top: 10px;
+                gap: 7px;
+                border: 0.5px solid lightgrey;
+            }
+        }
+
+        &.active {
+            background: #fff;
+            color: #000;
+
+            .logo {
+                .logoDot {
+                    color: #000;
+                }
+            }
+
+            .link {
+                button {
+                    background-color: transparent;
+                    border: 1px solid #000;
+                    color: #000;
+
+                    &:hover {
+                        background-color: #04AA6D;
+                        border-color: #04AA6D;
+                    }
+                }
+            }
+        }
+    }
+
+    hr {
+        width: 100%;
+        border: 0.5px solid lightgrey;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: space-between;
+        padding: 7px 200px;
+        color: #000;
+        background-color: #fff;
+    }
+}

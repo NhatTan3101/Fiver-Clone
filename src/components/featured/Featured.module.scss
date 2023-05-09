@@ -1,0 +1,63 @@
+.banner {
+    margin-top: 83px;
+    padding: 100px 200px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #013914;
+    color: #fff;
+
+    h2 {
+        font-weight: 700;
+        font-size: 40px;
+        width: 70%;
+
+        i {
+            font-weight: 100;
+        }
+    }
+
+    .searchBar {
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        margin: 30px 0px;
+        background-color: #fff;
+        width: 70%;
+
+        img {
+            height: 38px;
+        }
+
+        input {
+            padding: 11.5px 56% 11.5px 0px;
+            border: none;
+            outline: none;
+            font-size: 16px;
+        }
+
+        button {
+            padding: 13px;
+            border: none;
+            background-color: #1dbf73;
+            color: #fff;
+            cursor: pointer;
+        }
+    }
+
+    .popular {
+        display: flex;
+        margin: 10px 0px;
+        align-items: center;
+
+        span {
+            font-style: normal;
+            border: 1px solid #fff;
+            padding: 3px 5px;
+            margin-left: 7px;
+            border-radius: 15px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    }
+}
